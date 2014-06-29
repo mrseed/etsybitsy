@@ -4,6 +4,8 @@ class Listing < ActiveRecord::Base
 		:small => "120x120>",
 		:thumb => "64x64!" }, 
 		:default_url => "default.jpg"
-  validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
-  	
+  	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/,
+	  	:storage => :dropbox,
+	    :dropbox_credentials => Rails.root.join("config/dropbox.yml")
+	      	
 end
