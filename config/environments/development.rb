@@ -28,6 +28,6 @@ Etsydemo::Application.configure do
   config.assets.debug = true
 
   # Required for devise. Remember to change localhost:3000 to actual application host
-  config.action_mailer.default_url_option = { host: 'www.heroku.com' }
+  config.action_mailer.default_url_option = { host: 'localhost:3000' }
 
 end
