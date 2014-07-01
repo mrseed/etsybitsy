@@ -27,7 +27,7 @@ Etsydemo::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  # Required for devise. Remember to change localhost:3000 to actual application host
+  # Required for devise.
   config.action_mailer.default_url_option = { host: 'localhost:3000' }
 
 end
