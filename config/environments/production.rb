@@ -79,7 +79,7 @@ Etsydemo::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Required for devise. Remember to change localhost:3000 to actual application host
-  config.action_mailer.default_url_options = { host: 'etsybitsy2014.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
 
 
